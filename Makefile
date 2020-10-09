@@ -21,7 +21,9 @@ cluster-up:
 	    --agents 3
 
 init: logs repos namespaces
+
 platform: install-service-mesh install-ingress install-logging install-monitoring install-secrets
+
 deplatform: delete-service-mesh delete-ingress delete-logging delete-monitoring delete-secrets
 
 logs:
